@@ -1,0 +1,10 @@
+# Ignore large datasets
+MMASD/**
+Engagnition/**
+
+# Ignore Jupyter checkpoints
+.ipynb_checkpoints/
+
+# Ignore system files (Windows)
+Thumbs.db
+Desktop.ini
