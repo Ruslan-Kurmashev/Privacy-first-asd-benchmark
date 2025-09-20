@@ -124,7 +124,6 @@ Create a `docs/` folder and add:
 - `docs/metadata_schema.md` – complete field list, types, allowed values, examples  
 - `docs/preparation.md` – step-by-step harmonization & label building (`movement_intensity_*`)  
 - `docs/training.md` – training configs, GroupKFold details, seeds, optional class/subject weights  
-- `docs/fairness.md` – slice definitions and delta-metric computation  
 - `docs/results.md` – how to read `metrics_*.csv` and reproduce the figures  
 - `docs/reproducibility.md` – versioning, frozen manifests, split manifests
 
