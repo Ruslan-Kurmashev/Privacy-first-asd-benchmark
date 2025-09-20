@@ -14,7 +14,6 @@
   - **IID:** GroupKFold within each dataset (groups = `participant_id_global`)  
   - **LODO:** train on one dataset, test on the other
 - **Metrics:** AUROC (primary), Balanced Accuracy, F1
-- **Fairness slices:** sex / age with delta-metrics and CIs
 - **Saved outputs:** CSV metrics in `outputs/tables/` and figures in `figs/`
 
 ---
