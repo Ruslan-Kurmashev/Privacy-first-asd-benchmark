@@ -8,13 +8,13 @@
 
 ## What’s inside
 
-- **Unified metadata** across two datasets (one row = MMASD clip or Engagnition session)
-- **Shared target** `movement_intensity_bin` (robust-z within participant, binarized at `z ≥ 0`)
-- **Setups:**  
+**Unified metadata** across two datasets (one row = MMASD clip or Engagnition session)
+**Shared target** `movement_intensity_bin` (robust-z within participant, binarized at `z ≥ 0`)
+**Setups:**  
   - **IID:** GroupKFold within each dataset (groups = `participant_id_global`)  
   - **LODO:** train on one dataset, test on the other
-- **Metrics:** AUROC (primary), Balanced Accuracy, F1
-- **Saved outputs:** CSV metrics in `outputs/tables/` and figures in `figs/`
+**Metrics:** AUROC (primary), Balanced Accuracy, F1
+**Saved outputs:** CSV metrics in `outputs/tables/` and figures in `figs/`
 
 ---
 
@@ -88,11 +88,11 @@ Session Elapsed Time.xlsx
 
 ## Minimal field schema (high-level)
 
-- Keys: `sample_id`, `participant_id_global`, `dataset`
-- Targets: `movement_intensity_raw`, `movement_intensity_z`, `movement_intensity_bin`
-- Demographics for fairness: `sex`, `age_years` (and/or `age_group`)
-- Reproducibility: `split_seed`, `split_iid`, `split_lodo`, `group_kfold`
-- Provenance: `source_file`, `path_*` to derived features (relative paths)
+Keys: `sample_id`, `participant_id_global`, `dataset`
+Targets: `movement_intensity_raw`, `movement_intensity_z`, `movement_intensity_bin`
+Demographics for fairness: `sex`, `age_years` (and/or `age_group`)
+Reproducibility: `split_seed`, `split_iid`, `split_lodo`, `group_kfold`
+Provenance: `source_file`, `path_*` to derived features (relative paths)
 
 A full schema with types and examples is provided in `docs/metadata_schema.md` (see below).
 
@@ -109,9 +109,9 @@ A full schema with types and examples is provided in `docs/metadata_schema.md` (
 
 ## Intended use & limitations
 
-- Datasets comprise **children with ASD only**; this is **not** an ASD-vs-TD diagnostic pipeline.  
-- `movement_intensity_bin` is a **proxy** label designed for cross-dataset comparability and privacy.  
-- We intentionally favor simple, transparent tabular models to emphasize **transportability** and **fairness**, not leaderboard SOTA.
+Datasets comprise **children with ASD only**; this is **not** an ASD-vs-TD diagnostic pipeline.  
+`movement_intensity_bin` is a **proxy** label designed for cross-dataset comparability and privacy.  
+We intentionally favor simple, transparent tabular models to emphasize **transportability** and **fairness**, not leaderboard SOTA.
 
 ---
 
