@@ -12,7 +12,7 @@
 
 ### Engagnition (ACC)
 - Compute Signal Vector Magnitude (SVM = sqrt(ax^2+ay^2+az^2)) per timestamp.
-- Aggregate per session (e.g., median, 75th percentile) → `movement_intensity_raw`.
+- Aggregate per session (median) → `movement_intensity_raw`.
 
 ## 3) Within-participant robust z-score
 For each participant independently:
